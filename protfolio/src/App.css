@@ -1,3 +1,9 @@
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-black: rgba(255, 255, 255, 0);
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +38,47 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/*********************************NAVBAR***************************/
+.logo {
+  width: 5rem;
+  height: 4rem;
+}
+
+/********************************MENU LINKS************************/
+nav a.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.0375px;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav>li>a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 019rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem;
+}
+
+.navbar-nav>li>a.active,
+.navbar-nav>li>a:active {
+  border-top: 0.19rem solid var(--primary-orange);
+}
+
+.navbar-nav>li>a:hover {
+  border-top: 0.19rem solid var(--primary-orange);
 }
