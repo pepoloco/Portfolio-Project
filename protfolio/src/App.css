@@ -45,6 +45,9 @@
 }
 
 /*********************************NAVBAR***************************/
+nav{
+  z-index: 2;
+}
 .logo {
   width: 5rem;
   height: 4rem;
@@ -81,4 +84,52 @@ nav ul li {
 
 .navbar-nav>li>a:hover {
   border-top: 0.19rem solid var(--primary-orange);
+}
+
+/********************************HEADER***********************/
+
+.header-wrap {
+  position: relative;
+  background: url(computer-laptop-macbook-coding.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  z-index: 1;
+}
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+/********************************TYPED TEXT***********************/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-orange)
+}
+
+/********************************HEADER MAIN OFFER BUTTON***********************/
+.btn-main-offer{
+  border: 1px solid var(--primary-orange);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.8rem, 0.9rem, 0.9rem, 0.9rem;
+  color: #61dafb;
+}
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0
 }
