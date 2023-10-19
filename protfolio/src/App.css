@@ -127,9 +127,3 @@ nav ul li {
   padding: 0.8rem, 0.9rem, 0.9rem, 0.9rem;
   color: #61dafb;
 }
-.tsparticles-canvas-el{
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: 0
-}
