@@ -9,23 +9,23 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="#"><img className='logo' src={logo} alt="logo" /></a>
+        <Link className="navbar-brand" href="#"><img className='logo' src={logo} alt="logo" /></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <FontAwesomeIcon icon={faBars} style={{color: '#fff'}} />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" to="/about-me">About me</a>
+              <Link className="nav-link active" to="/about-me">About me</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Services</a>
+              <Link className="nav-link" href="#services">Services</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Socials</a>
+              <Link className="nav-link active" aria-current="page" href="#socials">Socials</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">Contacts</a>
+              <Link className="nav-link active" aria-current="page" href="#contacts">Contacts</Link>
             </li>
           </ul>
         </div>
