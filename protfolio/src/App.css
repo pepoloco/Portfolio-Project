@@ -87,13 +87,13 @@ nav ul li {
 
 /********************************HEADER***********************/
 
-.header-wrap {
+/* .header-wrap {
   position: relative;
   background: url(computer-laptop-macbook-coding.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh
-}
+} */
 
 .main-info {
   display: flex;
@@ -117,11 +117,4 @@ nav ul li {
   color: var(--primary-orange);
 }
 
-/********************************HEADER MAIN OFFER BUTTON***********************/
-#tsparticles {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+/*******************************CLOCK*****************************/
