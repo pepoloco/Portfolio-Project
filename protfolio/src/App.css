@@ -77,7 +77,6 @@ nav ul li {
   height: 6rem;
 }
 
-.navbar-nav>li>a.active,
 .navbar-nav>li>a:active {
   border-top: 0.19rem solid var(--primary-orange);
 }
@@ -100,9 +99,8 @@ nav ul li {
   display: flex;
   position: absolute;
   top:0;
-  bottom:0;
   left: 0;
-  right: 0;
+  right: 0 ;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -116,14 +114,7 @@ nav ul li {
 /********************************TYPED TEXT***********************/
 .typed-text{
   font-size: 2rem;
-  color: var(--primary-orange)
+  color: var(--primary-orange);
 }
 
 /********************************HEADER MAIN OFFER BUTTON***********************/
-.btn-main-offer{
-  border: 1px solid var(--primary-orange);
-  text-transform: uppercase;
-  border-radius: 0;
-  padding: 0.8rem, 0.9rem, 0.9rem, 0.9rem;
-  color: #61dafb;
-}
