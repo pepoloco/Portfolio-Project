@@ -87,13 +87,13 @@ nav ul li {
 
 /********************************HEADER***********************/
 
-/* .header-wrap {
+.header-wrap {
   position: relative;
   background: url(computer-laptop-macbook-coding.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh
-} */
+}
 
 .main-info {
   display: flex;

@@ -1,22 +1,33 @@
-import { useEffect, useState } from 'react';
-import Clock from 'react-clock';
+// import { useEffect, useState } from 'react';
+// import Clock from 'react-clock';
+// import 'react-clock/dist/Clock.css';
 
-const MyApp = () => {
-    const [value, setValue] = useState(new Date());
+// const ClockComponent = () => {
+//     // State to hold the current time
+//     const [currentTime, setCurrentTime] = useState(new Date());
 
-    useEffect(() => {
-        const interval = setInterval(() => setValue(new Date()), 1000);
+//     // Set up an interval to update the current time every second
+//     useEffect(() => {
+//         const intervalId = setInterval(() => {
+//             setCurrentTime(new Date());
+//         }, 1000); // Updates every second
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
+//         // Clear the interval when the component is unmounted
+//         return () => {
+//             clearInterval(intervalId);
+//         };
+//     }, []); // Empty dependency array ensures the effect runs only once, similar to componentDidMount
 
-    return (
-        <div>
-            <p>Current time:</p>
-            <Clock value={value} />
-        </div>
-    );
-}
-export default MyApp;
+//     return (
+//         <div className='clock-wrap'>
+//             <div className='clock-main'>
+//                 <Clock
+//                     className="clock"
+//                     value={currentTime}  // Pass the current time here
+//                 />
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default ClockComponent;
