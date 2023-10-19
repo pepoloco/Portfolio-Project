@@ -1,36 +1,29 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar'
-import Header from './Components/Header';
-import AboutMe from './Components/AboutMe';
-import Services from './Components/Services';
-import Contact from './Components/Contacts'
-import Socials from './Components/Socials'
-// import Clock from './Components/Clock'
-
-
+import HomePage from './Pages/HomePage'
+import AboutMe from './Pages/AboutMe';
+import Services from './Pages/Services.jsx';
+import Contact from './Pages/Contacts'
+import Socials from './Pages/Socials'
 
 
 
 function App() {
   return (
     <>
-      {/* <Clock/> */}
-      <Router>
+      <BrowserRouter>
         <Navbar />
-        <Header />
         <Routes>
-          <Route path="/" element={<AboutMe />} />
-          <Route path="/about-me" element={<AboutMe />} />
-          <Route path="/" element={<Services />} />
-          <Route path="/about-me" element={<Services />} />
-          <Route path="/" element={<Socials />} />
-          <Route path="/about-me" element={<Socials />} />
-          <Route path="/" element={<Contact />} />
-          <Route path="/about-me" element={<Contact />} />
+          <Route index element={<HomePage />} />
+          <Route path='/home' element={<HomePage />} />
+          <Route path='/aboutMe' element={<AboutMe />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/socials' element={<Socials />} />
         </Routes>
-      </Router>
+      </BrowserRouter >
     </>
   );
 }
