@@ -18,7 +18,13 @@ const Navbar = () => {
               <a className="nav-link active" aria-current="page" href="#">About me</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Socials</a>
+              <a className="nav-link" href="#">Services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Socials</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Contacts</a>
             </li>
           </ul>
         </div>
