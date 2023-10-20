@@ -1,7 +1,7 @@
 :root {
-  --primary-white: #fff;
+  --primary-white: #fafafa;
   --primary-orange: #f9ab00;
-  --primary-black: rgba(255, 255, 255, 0);
+  --primary-green: #008000;
 }
 
 .App {
@@ -20,18 +20,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--primary-white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -45,9 +40,10 @@
 }
 
 /*********************************NAVBAR***************************/
-nav{
+nav {
   z-index: 2;
 }
+
 .logo {
   width: 5rem;
   height: 4rem;
@@ -67,7 +63,7 @@ nav ul li {
 .navbar-nav>li>a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-white) !important;
+  color: var(--primary-dadrk) !important;
   border-top: 019rem solid var(--primary-dark);
 }
 
@@ -78,43 +74,72 @@ nav ul li {
 }
 
 .navbar-nav>li>a:active {
-  border-top: 0.19rem solid var(--primary-orange);
+  border-top: 0.19rem solid var(--primary-green);
 }
 
 .navbar-nav>li>a:hover {
-  border-top: 0.19rem solid var(--primary-orange);
+  border-top: 0.19rem solid var(--primary-green);
 }
 
 /********************************HEADER***********************/
 
 .header-wrap {
   position: relative;
-  background: url(computer-laptop-macbook-coding.jpg) no-repeat;
+  background: url(./laptopCoding.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh
+  height: 100vh
 }
 
 .main-info {
   display: flex;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
-  right: 0 ;
+  right: 0;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
   z-index: 1;
 }
-.main-info h1{
-  color: var(--primary-orange);
+
+.main-info h1 {
+  color: var(--primary-green);
   text-transform: uppercase;
 }
+
+/********************************ABOUT ME*************************/
+.aboutMe-wrap {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E8E8E8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh
+}
+
+.paragraph-info {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  background-color: #E0E0E0;
+  text-transform: initial;
+  border: 2px solid black;
+  padding: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  width: 444px;
+  height: 280px;
+  overflow: hidden;
+  white-space: normal;
+}
+
 /********************************TYPED TEXT***********************/
-.typed-text{
+.typed-text {
   font-size: 2rem;
-  color: var(--primary-orange);
+  color: var(--primary-green);
 }
 
 /*******************************CLOCK*****************************/
