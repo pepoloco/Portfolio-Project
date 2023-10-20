@@ -63,7 +63,7 @@ nav ul li {
 .navbar-nav>li>a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--primary-dadrk) !important;
+  color: var(--primary-dark) !important;
   border-top: 019rem solid var(--primary-dark);
 }
 
@@ -105,7 +105,7 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--primary-green);
+  color: #8e9194;
   text-transform: uppercase;
 }
 
@@ -139,7 +139,7 @@ nav ul li {
 /********************************TYPED TEXT***********************/
 .typed-text {
   font-size: 2rem;
-  color: var(--primary-green);
+  color: #8e9194;
 }
 
 /*******************************CLOCK*****************************/
