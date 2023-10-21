@@ -1,22 +1,10 @@
-import './App.css';
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Portfolio from './Pages/Portfolio';
-
-
-
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/aboutMe' element={<Portfolio />} />
-        </Routes>
-      </BrowserRouter >
-    </>
+    <div className={'container1'}><Navbar /></div>
   );
 }
 
