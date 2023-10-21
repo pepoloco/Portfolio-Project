@@ -24,12 +24,12 @@ const Navbar = () => {
             {/* <li className="nav-item">
               <Link className="nav-link active" to="/services">Services</Link>
             </li> */}
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/socials">Socials</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/contact">Contacts</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
