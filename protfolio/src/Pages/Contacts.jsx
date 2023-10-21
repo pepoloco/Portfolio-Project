@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
     return (
         <div className='container'>
-            <h3>My Contacts</h3>
+            <h3 className='contact-h3'>Currently under construction</h3>
         </div>
     )
 }

@@ -130,8 +130,8 @@ nav ul li {
   border: 2px solid black;
   padding: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-  width: 444px;
-  height: 280px;
+  width: 400px;
+  height: 200px;
   overflow: hidden;
   white-space: normal;
 }
@@ -148,26 +148,37 @@ nav ul li {
   text-decoration: none;
 }
 
-.container {
+.div-socials {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
+  background-color: #E8E8E8;
+  height: 100vh;
 }
 
-.parent-h3 {
+.parent-h2 {
+  width: 100%;
   margin-bottom: 20px;
   text-transform: uppercase;
-  /* Adds some space between the h3 and the ul */
+  text-align: center;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   align-items: center;
 }
-/********************************SOCIALS**************************/
+
+.links-div {
+  background-color: #E8E8E8;
+}
+
+/********************************Contact**************************/
+.contact-h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
