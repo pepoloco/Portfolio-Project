@@ -105,6 +105,15 @@
     list-style-position: inside;
 }
 
+.previousJobs {
+    font-family: var(--font-roboto);
+    color: var(--color-text);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+
+}
 
 @media screen and (max-width: 830px) {
     .content {

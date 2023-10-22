@@ -16,6 +16,9 @@ const Navbar = () => {
                     <a href='#experience'>Experience</a>
                 </li>
                 <li>
+                    <a href='#certification'>Certifications</a>
+                </li>
+                <li>
                     <a href='#contact'>Contacts</a>
                 </li>
             </ul>
@@ -24,6 +27,7 @@ const Navbar = () => {
                 onClick={() => setMenuOpen(prev => !prev)}
                 aria-label="Menu"
             >
+                <span className={styles.bar}></span>
                 <span className={styles.bar}></span>
                 <span className={styles.bar}></span>
                 <span className={styles.bar}></span>

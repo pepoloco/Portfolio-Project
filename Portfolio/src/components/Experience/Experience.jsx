@@ -25,6 +25,7 @@ const Experience = () => {
                     })}
                 </div>
                 <ul className={styles.history}>
+                    <h3 className={styles.previousJobs}>Previous Jobs</h3>
                     {
                         history.map((historyItem, id) => {
                             return (

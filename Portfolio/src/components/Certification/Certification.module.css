@@ -1,0 +1,52 @@
+@import "../../vars.css";
+
+.certificateContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.certificateTitle {
+    display: flex;
+    font-family: var(--font-roboto);
+    font-weight: 900;
+    text-align: center;
+    font-size: 55px;
+    color: var(--color-text);
+    margin-bottom: 33px;
+}
+
+.certificateNames {
+    display: inline;
+    font-family: var(--font-roboto);
+    color: var(--color-text);
+    justify-content: center;
+    text-align: start;
+    word-spacing: 2px;
+    font-size: 20px;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate h3 {
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.certificate p {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.certificate a {
+    color: dodgerblue;
+    display: inline;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+}
