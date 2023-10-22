@@ -17,8 +17,19 @@
     color: var(--color-text);
 }
 
+<<<<<<< Updated upstream
 .menu {
     display: flex;
+=======
+.title_navBar:hover {
+    color: dodgerblue
+}
+
+.menu_navBar {
+    display: none;
+    cursor: pointer;
+    position: relative;
+>>>>>>> Stashed changes
 }
 
 .menuItems {
@@ -33,40 +44,53 @@
     text-decoration: none;
 }
 
+.menuItems a:hover {
+    color: dodgerblue;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
 @media screen and (max-width:830px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu {
-        position: absolute;
-        right: 0;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index: 3;
-    }
-
-    .nmenuBtn {
+    .menu_navBar {
         display: block;
         cursor: pointer;
+    }
+
+    .nav_navBar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .menuItems {
         display: none;
         flex-direction: column;
-        align-items: center;
+        position: absolute;
         gap: 13px;
+        top: 100%;
+        right: 0;
         border-radius: 10px;
-        background: rgb(25, 25, 109);
-        background: linear-gradient(0deg, rgba(25, 55, 109, 02)0%, rgba(25, 55, 109, 1)100%);
+        background: rgb(25, 55, 109);
+        background: linear-gradient(0deg,
+                rgba(25, 55, 109, 0.2) 0%,
+                rgba(25, 55, 109, 1) 100%);
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
+<<<<<<< Updated upstream
     .menuOpen{
+=======
+
+    .menuItems.active {
+>>>>>>> Stashed changes
         display: flex;
         z-index: 1;
     }
+
 }
