@@ -1,0 +1,58 @@
+[
+  {
+    "role": "Sales Person",
+    "organisation": "ARTE-5YA, PLOVDIV",
+    "startDate": "August,2020",
+    "endDate": "Present",
+    "experiences": [
+      "Preparation of orders and deliveries",
+      "Increased sales and customer satisfaction through personalized servicing.",
+      "Developed and maintained comprehensive understanding of products, services and competitors to enhance sales presentations",
+      "Negotiated contracts with clients and developed relationships with key personnel"
+    ],"imageSrc": "history/arte-5ya.jpg"
+  },
+  {
+    "role": "Real Estate Broker",
+    "organisation": "Adress Real Estate, Plovdiv",
+    "startDate": "November,2019",
+    "endDate": "March,2020",
+    "experiences": [
+      "Compared properties possessing similar features to determine competitive market prices.",
+      "Negotiated real estate contracts to navigate transactions between buyers and sellers.",
+      "Evaluated properties for potential salability and pricing."
+    ],"imageSrc": "history/address.png"
+  },
+  {
+    "role": "Busser",
+    "organisation": "Tailchasers , Ocean City",
+    "startDate": "June,2019",
+    "endDate": "September, 2019",
+    "experiences": [
+      "Kept close eye on customers to quickly spot leaving guests and clear tables for future patrons.",
+      "Transported dirty utensils, dishes, and trays to kitchen to help team stay on top of cleaning.",
+      "Pitched in extra hours and helped other staff during unexpected times of high volume to improve seating availability and food delivery to tables"
+    ],"imageSrc": "history/tailchasers.png"
+  },
+  {
+    "role": "Maitenenance",
+    "organisation": "DoubleTree by Hilton, Ocean City",
+    "startDate": "May,2019",
+    "endDate": "September, 2019",
+    "experiences": [
+      "Troubleshot equipment breakdowns andperformed preventive maintenance.",
+      "Completed daily, weekly, and monthly checklists on building equipment to maintain records of scheduled maintenance procedures.",
+      "Used problem-solving skills to alleviate issues efficiently with minimal supervision"
+    ],"imageSrc": "history/doubleTree.png"
+  },
+  {
+    "role": "Maitenenance",
+    "organisation": "DoubleTree by Hilton, Ocean City",
+    "startDate": "May, 2018",
+    "endDate": "September, 2018",
+    "experiences": [
+      "Troubleshot equipment breakdowns andperformed preventive maintenance.",
+      "Completed daily, weekly, and monthly checklists on building equipment to maintain records of scheduled maintenance procedures.",
+      "Used problem-solving skills to alleviate issues efficiently with minimal supervision"
+    ],"imageSrc": "history/doubleTree.png"
+  }
+]
