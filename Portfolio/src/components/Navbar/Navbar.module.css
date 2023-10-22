@@ -1,6 +1,6 @@
 @import "../../vars.css";
 
-.navbar {
+.navbar_navBar {
     position: relative;
     display: flex;
     align-items: center;
@@ -10,14 +10,14 @@
     margin: 0 10%;
 }
 
-.title {
+.title_navBar {
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
 }
 
-.menu {
+.menu_navBar {
     display: flex;
 }
 
@@ -65,7 +65,8 @@
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
-    .menuOpen{
+
+    .menuOpen {
         display: flex;
         z-index: 1;
     }
