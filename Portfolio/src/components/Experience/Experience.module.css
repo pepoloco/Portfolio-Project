@@ -83,6 +83,7 @@
     font-family: var(--font-roboto);
     font-size: larger;
     padding: 10px;
+    margin-left: -10px;
 }
 
 .hisotryItemDetails p {
@@ -97,6 +98,13 @@
     list-style-type: disc;
     margin-left: 17px;
 }
+
+.pTagDates {
+    margin-bottom: 6px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
 
 @media screen and (max-width: 830px) {
     .content {

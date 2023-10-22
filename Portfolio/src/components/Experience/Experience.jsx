@@ -36,6 +36,7 @@ const Experience = () => {
                                     <div className={styles.historyItemDetails}>
                                         <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
                                         <p>{`${historyItem.role}, ${historyItem.organisation}`}</p>
+                                        <p className={styles.pTagDates}>{`${historyItem.startDate}, ${historyItem.endDate}`}</p>
                                         <ul>{historyItem.experiences.map((experience, subId) => {
                                             return <li key={subId}>{experience}</li>
                                         })}</ul>

@@ -16,7 +16,7 @@ const Navbar = () => {
                     <a href='#experience'>Experience</a>
                 </li>
                 <li>
-                    <a href='#contact'>Contact</a>
+                    <a href='#contact'>Contacts</a>
                 </li>
             </ul>
             <div

@@ -7,7 +7,7 @@ const Contact = () => {
         <footer className={styles.footerContainer} id='contact'>
             <div className={styles.text}>
                 <h2 className>Contacts</h2>
-                <p className>Feel Free To Contact Me</p>
+                <p className>To Contact Me</p>
             </div>
             <ul className={styles.links}>
                 <li className={styles.link}>

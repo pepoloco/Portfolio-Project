@@ -15,7 +15,7 @@ const About = () => {
                         <img src={getImageUrl("icons/icons8-front-end-64.png")} alt='Cursor' className={styles.imageCursor} />
                         <div className={styles.aboutItemText}>
                             <h3>Front End Dev</h3>
-                            <p>I have experience with HTML,CSS,JAVASCRIPT,BOOTSTRAP and REACT , currently trying to improve my skills even more. </p>
+                            <p>I have experience with Javascript,HTML,CSS,React,Bootstrap,Mocha and Chai , currently trying to improve my skills even more. </p>
                         </div>
                     </li>
                     <li className={styles.aboutItem}>
