@@ -10,5 +10,21 @@
   {
     "title": "React",
     "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Javascript",
+    "imageSrc": "skills/javascript.logo.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/bootstrap.logo.png"
+  },
+  {
+    "title": "Mocha",
+    "imageSrc": "skills/mocha.logo.png"
+  },
+  {
+    "title": "Chai",
+    "imageSrc": "skills/chai.logo.png"
   }
 ]

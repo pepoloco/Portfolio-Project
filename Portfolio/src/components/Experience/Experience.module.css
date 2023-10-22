@@ -76,13 +76,16 @@
 
 .historyItem img {
     width: 50px;
+    margin-right: 20px;
 }
 
-.historyItemDetails {
+.historyItemDetails h3 {
     font-family: var(--font-roboto);
+    font-size: larger;
+    padding: 10px;
 }
 
-.hisotryItemDetails п {
+.hisotryItemDetails p {
     font-size: 30px;
     font-weight: 500;
 }
