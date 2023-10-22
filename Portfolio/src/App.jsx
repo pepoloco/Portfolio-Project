@@ -1,13 +1,15 @@
-import styles from "./App.module.css";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Navbar/Hero/Hero";
-
+import { useState } from 'react'
+import style from "./App.module.css"
+import Hero from './components/Hero/Hero'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div className={styles.App}>
+    <div className={style.App}>
       <Navbar />
-      <Hero />
+      <Hero />;
     </div>
   )
 }
