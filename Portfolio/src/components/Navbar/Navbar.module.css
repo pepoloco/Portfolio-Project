@@ -17,14 +17,6 @@
     color: var(--color-text);
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-.menu {
-=======
-.menu_navBar {
->>>>>>> Experience
-    display: flex;
-=======
 .title_navBar:hover {
     color: dodgerblue
 }
@@ -32,8 +24,6 @@
 .menu_navBar {
     display: none;
     cursor: pointer;
-    position: relative;
->>>>>>> Stashed changes
 }
 
 .menuItems {
@@ -65,6 +55,7 @@
     .menu_navBar {
         display: block;
         cursor: pointer;
+        position: relative;
     }
 
     .nav_navBar {
@@ -87,17 +78,8 @@
         padding: 24px 33px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    .menuOpen{
-=======
 
     .menuItems.active {
->>>>>>> Stashed changes
-=======
-
-    .menuOpen {
->>>>>>> Experience
         display: flex;
         z-index: 1;
     }
