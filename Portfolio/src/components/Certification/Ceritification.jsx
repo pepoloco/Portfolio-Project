@@ -5,7 +5,7 @@ import { credentialUrl } from '../../utils';
 
 function Ceritification() {
     return (
-        <section className={styles.certificateContainer}>
+        <section className={styles.certificateContainer} id='certification'>
             <div className={styles.certificateContent}>
                 <h2 className={styles.certificateTitle}>Certificates</h2>
                 <ul className={styles.certificateNames}>
