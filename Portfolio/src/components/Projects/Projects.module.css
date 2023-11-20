@@ -1,0 +1,38 @@
+@import "../../vars.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title_projects {
+    display: flex;
+    font-family: var(--font-roboto);
+    font-weight: 900;
+    text-align: center;
+    font-size: 55px;
+    color: var(--color-text);
+    margin-bottom: 33px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+
+.projects li {
+    list-style: none;
+}
+
+.projects a {
+    font-size: 30px;
+    color: dodgerblue;
+    display: inline;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+}
