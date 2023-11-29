@@ -23,10 +23,10 @@
 }
 
 .skills {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
-    gap: 11px;
+    gap: 7px;
 }
 
 .skill {

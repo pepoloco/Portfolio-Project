@@ -12,12 +12,16 @@
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "Javascript",
+    "title": "JavaScript",
     "imageSrc": "skills/javascript.logo.png"
   },
   {
-    "title": "Bootstrap",
-    "imageSrc": "skills/bootstrap.logo.png"
+    "title": "MySQL",
+    "imageSrc": "skills/mysql-icon.png"
+  },
+  {
+    "title": "Jest",
+    "imageSrc": "skills/jest-js-icon.png"
   },
   {
     "title": "Mocha",
