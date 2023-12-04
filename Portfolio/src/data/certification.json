@@ -25,8 +25,13 @@
         "credential-id": "https://softuni.bg/certificates/details/137467/1782f5e0"
     },
     {
-        "title": "Programming Fundamentals with Javascript",
+        "title": "Programming Fundamentals with JavaScript",
         "publisher": "SoftUni Academy",
         "credential-id": "https://softuni.bg/certificates/details/169219/60a19e4c"
+    },
+    {
+        "title": "Programming Fundamentals with JavaScript",
+        "publisher": "Udemy",
+        "credential-id": "https://www.udemy.com/certificate/UC-c0b14ea1-b2e5-40c1-834b-8aca38e8d540/"
     }
 ]
