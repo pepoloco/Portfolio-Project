@@ -1,37 +1,78 @@
 [
     {
         "title": "React Basics",
+        "gained-skills": [
+            "Creating Components",
+            "Use and manipulate props and components to effect visual results"
+        ],
         "publisher": "Meta",
         "credential-id": "https://coursera.org/share/6aed5f713083b66b5dfec8a91e7758ce"
     },
     {
         "title": "Programming with JavaScript",
+        "gained-skills": [
+            "Basic common operators",
+            "Conditional Statements",
+            "Loops"
+        ],
         "publisher": "Meta",
         "credential-id": "https://coursera.org/share/2b38c2a79c4b8e3bfad0bd3bb3b58172"
     },
     {
         "title": "HTML and CSS in depth",
+        "gained-skills": [
+            "Semantic tags",
+            "Input types"
+        ],
         "publisher": "Meta",
         "credential-id": "https://coursera.org/share/63b24b15193d2cedbf87179301c94c60"
     },
     {
         "title": "Introduction to Front-End Development",
+        "gained-skills": [
+            "Distinguish between front-end, back-end and full stack development"
+        ],
         "publisher": "Meta",
         "credential-id": "https://coursera.org/share/a8227ebba6e1d78e9760157b1bc5d96c"
     },
     {
-        "title": "Progamming Basics",
-        "publisher": "SoftUni Academy",
-        "credential-id": "https://softuni.bg/certificates/details/137467/1782f5e0"
-    },
-    {
         "title": "Programming Fundamentals with JavaScript",
+        "gained-skills": [
+            "Array operations",
+            "Arrow functions",
+            "Function Encapsulation"
+        ],
         "publisher": "SoftUni Academy",
         "credential-id": "https://softuni.bg/certificates/details/169219/60a19e4c"
     },
     {
-        "title": "Programming Fundamentals with JavaScript",
+        "title": "Progamming Basics",
+        "gained-skills": [
+            "Basic common operators",
+            "Conditional Statements",
+            "Loops"
+        ],
+        "publisher": "SoftUni Academy",
+        "credential-id": "https://softuni.bg/certificates/details/137467/1782f5e0"
+    },
+    {
+        "title": "Object-Oriented Programming in JavaScript",
+        "gained-skills": [
+            "Prototypal Inheritance",
+            "Constructor ",
+            "The 'This' keyword"
+        ],
         "publisher": "Udemy",
         "credential-id": "https://www.udemy.com/certificate/UC-c0b14ea1-b2e5-40c1-834b-8aca38e8d540/"
+    },
+    {
+        "title": "JavaScript Advanced",
+        "gained-skills": [
+            "Objects and properties",
+            "DOM Manipulation and Events",
+            "Prototypal Inheritance"
+        ],
+        "publisher": "SoftUni Academy",
+        "credential-id": "https://softuni.bg/certificates/details/195511/ae220d49"
     }
 ]

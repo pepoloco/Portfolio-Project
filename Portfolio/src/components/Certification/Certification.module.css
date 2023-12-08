@@ -13,7 +13,8 @@
     text-align: center;
     font-size: 55px;
     color: var(--color-text);
-    margin-bottom: 33px;
+    margin-bottom: 23px;
+
 }
 
 .certificateNames {
@@ -24,6 +25,7 @@
     text-align: start;
     word-spacing: 2px;
     font-size: 20px;
+
 }
 
 .certificate {
@@ -32,21 +34,53 @@
 }
 
 .certificate h3 {
+    display: flex;
     font-family: var(--font-roboto);
     font-weight: 700;
     font-size: 30px;
-    margin: 10px;
+    margin: 5px;
+    text-decoration: underline solid white;
 }
 
+
 .certificate p {
-    font-size: 22px;
-    margin: 10px;
+    font-size: 20px;
+    margin-left: 5px;
+
 }
 
 .certificate a {
     color: dodgerblue;
-    display: inline;
+    position: relative;
+    display: block;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
     text-decoration: none;
+    height: auto;
+    width: fit-content;
+}
+
+.certificationSkills {
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    margin: 10px;
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #ccc;
+    margin: 5px;
+    width: 135px;
+}
+
+.certificate a:hover {
+    text-decoration: underline;
+
 }

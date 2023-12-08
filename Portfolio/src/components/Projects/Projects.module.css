@@ -36,3 +36,20 @@
     margin: 10px;
     text-decoration: none;
 }
+
+.projects p {
+    font-size: 30px;
+    color: var(--color-text);
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.projects h3 {
+    font-family: var(--font-roboto);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+}
