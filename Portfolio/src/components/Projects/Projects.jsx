@@ -10,7 +10,7 @@ const Projects = () => {
       <div className={styles.projects}>
         <li>
           <h3>Weather App</h3>
-          <a href='https://dazzling-snickerdoodle-9bc311.netlify.app/'><img src={getImageUrl("projects/weather-app.png")} alt='My Project' style={{ width: "160px", height: "200px" }} /></a>
+          <a href='https://accurate-weather-appjsx.netlify.app/'><img src={getImageUrl("projects/weather-app.png")} alt='My Project' style={{ width: "160px", height: "200px" }} /></a>
         </li>
         <li>
           <h3>My Portfolio</h3>
