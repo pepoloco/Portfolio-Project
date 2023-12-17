@@ -1,5 +1,13 @@
 [
     {
+        "title": "Advanced React",
+        "gained-skills": [
+            "Learn the React Hooks."
+        ],
+        "publisher": "Meta",
+        "credential-id": "https://coursera.org/share/afea1eff701152003f4433997befe2ab"
+    },
+    {
         "title": "React Basics",
         "gained-skills": [
             "Creating Components",

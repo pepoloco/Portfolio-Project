@@ -16,7 +16,11 @@ const Projects = () => {
           <h3>My Portfolio</h3>
           <a href='https://peposportfolio.netlify.app/'><img src={getImageUrl("projects/portfolio.png")} alt='My Portfolio' style={{ width: "340px", height: "200px" }} /></a>
         </li>
-        <p>Rght now contributing to Open Source Projects on GitHub</p>
+        <li>
+          <h3>Steam App</h3>
+          <a href='https://steam-app-market.netlify.app/'><img src={getImageUrl("projects/steam-app.png")} alt='Steam App' style={{ width: "340px", height: "200px" }} /></a>
+        </li>
+        <p>At the moment I am studying and trying to contribute on Open Source Projects on GitHub</p>
       </div>
     </section>
   )
