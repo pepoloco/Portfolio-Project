@@ -9,31 +9,6 @@
     position: absolute;
 }
 
-.topBlur {
-    width: 60vw;
-    height: 100vw;
-    min-width: 200px;
-    min-height: 150px;
-    left: -35vw;
-    bottom: -95vw;
-    border-radius: 764px;
-    background-color: rgba(105, 3, 100, 0.281);
-    filter: blur(100px);
-    z-index: 0;
-}
-
-.bottomBlur {
-    width: 60vw;
-    height: 100vw;
-    min-width: 200px;
-    min-height: 150px;
-    top: 280px;
-    right: -35vw;
-    border-radius: 764px;
-    background-color: rgba(105, 3, 100, 0.329);
-    filter: blur(100px);
-    z-index: 0;
-}
 
 .certificateTitle {
     display: flex;
