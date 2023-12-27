@@ -15,7 +15,9 @@ function App() {
       <Hero />
       <About />
       {/* <Experience /> */}
+      <hr></hr>
       <Projects />
+      <hr></hr>
       <Ceritification />
       <Contact />
     </div>

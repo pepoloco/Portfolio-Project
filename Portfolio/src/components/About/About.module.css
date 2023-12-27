@@ -26,7 +26,7 @@
 }
 
 .imageStudying {
-    width: 35%;
+    width: 30%;
 }
 
 .aboutItems {
@@ -44,7 +44,7 @@
     list-style: none;
     padding: 25px;
     background-image: linear-gradient(90deg,
-            rgba(165, 215, 232, 0.42)0%,
+            rgba(13, 161, 211, 0.42)0%,
             rgba(255, 255, 255, 0));
     background-size: 0 100%;
     background-repeat: no-repeat;

@@ -3,12 +3,14 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .title_projects {
-    display: flex;
-    font-family: var(--font-roboto);
+    justify-content: center;
+    font-family: var(--font-family);
     font-weight: 900;
     text-align: center;
     font-size: 55px;
@@ -16,50 +18,63 @@
     margin-bottom: 33px;
 }
 
-.projects {
+
+.carousel {
     display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 20px;
-
-}
-
-.projects li {
-    list-style: none;
-}
-
-.projects a {
-    font-size: 30px;
-    color: dodgerblue;
-    display: inline;
-    cursor: pointer;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.projects p {
-    font-size: 30px;
-    color: var(--color-text);
-    font-family: var(--font-roboto);
-    font-weight: 600;
-    display: flex;
-    margin-left: 40px;
     align-items: center;
 }
 
-.projects h3 {
-    font-family: var(--font-roboto);
-    color: var(--color-text);
-    display: flex;
-    justify-content: center;
+.arrow {
+    font-size: 22px;
+    border-radius: 20px;
+    color: var(--color-dark);
+    cursor: pointer;
 }
+
+.projectsWrapper {
+    display: flex;
+    transition: transform 0.5s ease-in;
+    gap: 30px;
+}
+
+.project {
+    display: flex;
+    display: inline;
+    text-align: center;
+    font-family: var(--font-family);
+    color: var(--color-text);
+    font-size: 17px;
+    margin: 0 10px;
+    opacity: 0.55;
+    transition: opacity 0.5s ease-in;
+}
+
+.project.active {
+    opacity: 1;
+}
+
+.paragraphs p {
+    font-size: medium;
+    padding-top: 6px;
+    word-spacing: 1px;
+}
+
+
+
 @media screen and (max-width:830px) {
     .container {
         flex-direction: column;
         gap: 23px;
     }
 
-    .projects {
+    .projectsWrapper {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,5 +82,15 @@
 
     .projects a {
         align-items: center;
+    }
+
+    .carousel {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .arrow {
+        margin: 0 5px;
     }
 }

@@ -15,14 +15,14 @@ const About = () => {
                         <img src={getImageUrl("icons/icons8-front-end-64.png")} alt='Cursor' className={styles.imageCursor} />
                         <div className={styles.aboutItemText}>
                             <h3>Front End Dev</h3>
-                            <p>I have experience with JavaScript,HTML,CSS,React</p>
+                            <p>I have experience with JavaScript, HTML, CSS, React</p>
                         </div>
                     </li>
                     <li className={styles.aboutItem}>
                         <img src={getImageUrl("icons/icons8-computer-94.png")} alt='Server Icon' className={styles.imageServer} />
                         <div className={styles.aboutItemText}>
                             <h3>Back End Dev</h3>
-                            <p>I have some experience with MySQL</p>
+                            <p>I have basic knowledge of MySQL</p>
                         </div>
                     </li>
                     <li className={styles.aboutItem}>
