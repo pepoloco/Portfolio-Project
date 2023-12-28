@@ -26,14 +26,18 @@
     margin-bottom: 33px;
     font-family: var(--font-family);
     background: linear-gradient(90deg, rgba(255, 255, 255, 1) 77%, rgba(255, 255, 255, 0) 144%);
+    display: -webkit-box;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
 .description_hero {
-    font-size: 25px;
-    font-family: var(--font-family);
+    font-size: 23px;
+    font-family: var(--font-family1);
     margin-bottom: 55px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-line-clamp: 3;
 }
 
 /* .contactBtn {
@@ -79,7 +83,7 @@
     top: -128px;
     left: -10vw;
     border-radius: 764px;
-    background-color: rgba(101, 11, 153, 0.349) ;
+    background-color: rgba(101, 11, 153, 0.349);
     filter: blur(100px);
     z-index: 0;
 }
@@ -106,5 +110,13 @@
 
     .content {
         align-items: center;
+    }
+
+    .description_hero {
+        font-size: 17px;
+    }
+    .img_hero{
+        margin-top: 300px;
+        width: 100%;
     }
 }
