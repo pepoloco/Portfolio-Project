@@ -7,17 +7,18 @@ import Contact from "./components/Contact/Contact"
 import Ceritification from "./components/Certification/Ceritification"
 import Projects from "./components/Projects/Projects"
 
+
+
 function App() {
 
   return (
     <div className={styles.App}>
       <Navbar />
+      <hr></hr>
       <Hero />
       <About />
       {/* <Experience /> */}
-      <hr></hr>
       <Projects />
-      <hr></hr>
       <Ceritification />
       <Contact />
     </div>

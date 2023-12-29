@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./Projects.module.css"
 import { getImageUrl } from '../../utils'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeftLong, faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+
 
 const Projects = () => {
-  const [current, setCurrent] = useState(0);
   const projects = [
     {
       title: "Weather App",
@@ -16,9 +14,9 @@ const Projects = () => {
     },
     {
       title: "My Portfolio",
-      url: "'https://peposportfolio.netlify.app/",
+      url: "https://peposportfolio.netlify.app",
       image: "portfolio.png",
-      duration: 'Consistently updating it',
+      duration: 'Constantly updating it',
       description: "My online portfolio"
     },
     {
@@ -32,51 +30,29 @@ const Projects = () => {
       title: "Night Club",
       url: "",
       image: "",
-      duration: '',
+      duration: 'Currently working on it',
       description: "A music player, implementing API from spotify"
     }
   ];
-  const nextProject = () => {
-    setCurrent((current + 1) % projects.length);
-  }
-  const previousProject = () => {
-    setCurrent((current - 1 + projects.length) % projects.length)
-  }
   return (
-    <section className={styles.container} id='projects'>
-      <h2 className={styles.title_projects}>Projects</h2>
-      <div className={styles.carousel}>
-        <button onClick={previousProject} className={styles.arrow}><FontAwesomeIcon icon={faArrowLeftLong} /></button>
-        <div className={styles.projectsWrapper}>
-          {projects.map((project, index) => (
-            <div
-              key={project.title}
-              className={`${styles.project} ${index === current ? styles.active : ''}`}
-            >
-              {project.image ? (
-                <a href={project.url || '#!'}>
-                  <img
-                    src={getImageUrl(`projects/${project.image}`)}
-                    alt={project.title}
-                    style={{ width: "240px", height: "200px" }}
-                  />
-                </a>
-              ) : (
-                <div className={styles.placeholder}>
-                  <p style={{ opacity: '1', fontSize: '30px' }}>Working on</p>
-                </div>
-              )}
-              <div className={styles.paragraphs}>
-                <p>Title: {project.title}</p>
-                <p>Description: {project.description}</p>
-                <p>Duration: {project.duration}</p>
-              </div>
+    <section className={styles.container}>
+      <h2 className={styles.projectsTitle}>Projects</h2>
+      <div className={styles.projects}>
+        {projects.map((project, index) => (
+          <div key={project.title} className={styles.project}>
+            <a href={project.url}>
+              <img src={getImageUrl(`projects/${project.image}`)} alt={project.title} style={{ width: "188px", height: "180px" }} />
+            </a>
+            <div className={styles.paragraphs}>
+              <p>Title: {project.title}</p>
+              <p>Description: {project.description}</p>
+              <p>Duration: {project.duration}</p>
             </div>
-          ))}
-        </div>
-        <button onClick={nextProject} className={styles.arrow}><FontAwesomeIcon icon={faArrowRightLong} /></button>
+          </div>
+        ))}
       </div>
-      <h3></h3>
+      <div className='topBlur'></div>
+      <div className='bottomBlur'></div>
     </section>
   )
 }

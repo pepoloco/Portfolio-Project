@@ -1,39 +1,25 @@
 @import "../../vars.css";
 
+
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 20px;
 }
 
-.title_projects {
+.projectsTitle {
     justify-content: center;
     font-family: var(--font-family);
     font-weight: 900;
-    text-align: center;
     font-size: 55px;
     color: var(--color-text);
     margin-bottom: 33px;
 }
 
-
-.carousel {
+.projects {
     display: flex;
-    align-items: center;
-}
-
-.arrow {
-    font-size: 22px;
-    border-radius: 20px;
-    color: var(--color-dark);
-    cursor: pointer;
-}
-
-.projectsWrapper {
-    display: flex;
-    transition: transform 0.5s ease-in;
     gap: 30px;
 }
 
@@ -45,52 +31,52 @@
     color: var(--color-text);
     font-size: 17px;
     margin: 0 10px;
-    opacity: 0.55;
-    transition: opacity 0.5s ease-in;
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: scale(1);
 }
 
-.project.active {
+.project:hover {
     opacity: 1;
+    transform: scale(1.2);
 }
 
-.paragraphs p {
-    font-size: medium;
-    padding-top: 6px;
-    word-spacing: 1px;
+.paragraphs {
+    width: 300px;
+    border: 2px solid transparent;
+    padding: 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-spacing: 0.3px;
+}
+
+.paragraphs p:first-child {
+    margin-top: 0;
+}
+
+.paragraphs p:nth-child(2) {
+    margin-top: 3px;
+}
+
+.paragraphs p:nth-child(3) {
+    margin-top: 3px;
 }
 
 
 
-@media screen and (max-width:830px) {
-    .container {
+@media screen and (max-width: 830px) {
+    .projects {
         flex-direction: column;
-        gap: 23px;
-    }
-
-    .projectsWrapper {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
     }
 
     .project {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 20px;
+        transform: scale(1);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
     }
 
-    .projects a {
-        align-items: center;
-    }
-
-    .carousel {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .arrow {
-        margin: 0 5px;
+    .project:hover {
+        opacity: 1;
+        transform: scale(1.2);
     }
 }
