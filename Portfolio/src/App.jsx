@@ -7,6 +7,8 @@ import Contact from "./components/Contact/Contact"
 import Ceritification from "./components/Certification/Ceritification"
 import Projects from "./components/Projects/Projects"
 
+
+
 function App() {
 
   return (

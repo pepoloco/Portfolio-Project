@@ -35,12 +35,11 @@
     font-size: 23px;
     font-family: var(--font-family1);
     margin-bottom: 55px;
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-    -webkit-line-clamp: 3;
+    width: 50%;
+    word-wrap: break-word;
 }
 
-/* .contactBtn {
+.downloadCV {
     text-decoration: none;
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -49,10 +48,10 @@
     font-weight: 600;
     padding: 17px 26px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-} */
+}
 
 .img_hero {
-    width: 30%;
+    width: 44%;
     z-index: 1;
     animation-name: floating;
     animation-duration: 3s;
@@ -103,20 +102,17 @@
 }
 
 @media screen and (max-width:830px) {
-    .container {
-        flex-direction: column-reverse;
-
-    }
-
-    .content {
-        align-items: center;
-    }
-
     .description_hero {
-        font-size: 17px;
+        font-size: 16px;
+        width: 66%;
     }
-    .img_hero{
-        margin-top: 300px;
+
+    .downloadCV {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .img_hero {
         width: 100%;
     }
 }
