@@ -21,7 +21,7 @@
 }
 
 .title_hero {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 900;
     margin-bottom: 33px;
     font-family: var(--font-family);
@@ -103,8 +103,8 @@
 
 @media screen and (max-width:830px) {
     .description_hero {
-        font-size: 16px;
-        width: 66%;
+        font-size: 15px;
+        width: 100%;
     }
 
     .downloadCV {
@@ -113,6 +113,7 @@
     }
 
     .img_hero {
+        padding-top: 300px;
         width: 30%;
     }
 }
