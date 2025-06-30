@@ -1,4 +1,36 @@
 [
+   {
+    "title": "Hubspot",
+    "imageSrc": "skills/hubSpot.png"
+  },
+   {
+    "title": "Lemlist",
+    "imageSrc": "skills/lemlist.png"
+  },
+   {
+    "title": "Clay",
+    "imageSrc": "skills/clay.png"
+  },
+   {
+    "title": "Apollo.AI",
+    "imageSrc": "skills/apollo_ai.png"
+  },
+   {
+    "title": "Semrush",
+    "imageSrc": "skills/semrush.png"
+  },
+   {
+    "title": "Ahrefs",
+    "imageSrc": "skills/ahref_logo.png"
+  },
+   {
+    "title": "ContactOut",
+    "imageSrc": "skills/contactOut.png"
+  },
+     {
+    "title": "Metabase",
+    "imageSrc": "skills/metabase.png"
+  },
   {
     "title": "HTML",
     "imageSrc": "skills/html.png"
@@ -14,21 +46,5 @@
   {
     "title": "JavaScript",
     "imageSrc": "skills/javascript.logo.png"
-  },
-  {
-    "title": "MySQL",
-    "imageSrc": "skills/mysql-icon.png"
-  },
-  {
-    "title": "Jest",
-    "imageSrc": "skills/jest-js-icon.png"
-  },
-  {
-    "title": "Mocha",
-    "imageSrc": "skills/mocha.logo.png"
-  },
-  {
-    "title": "Chai",
-    "imageSrc": "skills/chai.logo.png"
   }
 ]

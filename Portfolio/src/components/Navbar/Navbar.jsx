@@ -9,18 +9,18 @@ const Navbar = () => {
         <nav className={styles.navbar_navBar}>
             <a className={styles.title_navBar} href='/'>Portfolio</a>
             <ul className={`${styles.menuItems} ${menuOpen ? styles.active : ''}`}>
-                <li>
-                    <a href='#about'>About</a>
-                </li>
                 {/* <li>
-                    <a href='#experience'>Experience</a>
+                    <a href='#about'>About</a>
                 </li> */}
                 <li>
+                    <a href='#experience'>Experience</a>
+                </li>
+                {/* <li>
                     <a href='#projects'>Projects</a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <a href='#certification'>Certifications</a>
-                </li>
+                </li> */}
                 <li>
                     <a href='#contact'>Contacts</a>
                 </li>

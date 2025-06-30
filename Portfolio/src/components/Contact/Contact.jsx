@@ -16,7 +16,7 @@ const Contact = () => {
                     </li>
                     <li>
                         <img src={getImageUrl("contact/linkedin.png")} alt='LinkedIn Icon'></img>
-                        <a href='https://www.linkedin.com/in/pepo-banchev-6b5908165/'>Pepo Bancev</a>
+                        <a href='https://www.linkedin.com/in/pepo-banchev/'>Pepo Bancev</a>
                     </li>
                     <li>
                         <img src={getImageUrl("contact/github.png")} alt='Github Icon'></img>

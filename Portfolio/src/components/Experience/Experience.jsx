@@ -35,13 +35,28 @@ const Experience = () => {
                                         alt={`${historyItem.organisation} Logo`}
                                     />
                                     <div className={styles.historyItemDetails}>
-                                        <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                                        <p>{`${historyItem.role}, ${historyItem.organisation}`}</p>
-                                        <p className={styles.pTagDates}>{`${historyItem.startDate}, ${historyItem.endDate}`}</p>
-                                        <ul>{historyItem.experiences.map((experience, subId) => {
-                                            return <li key={subId}>{experience}</li>
-                                        })}</ul>
-                                    </div>
+  <div className={styles.headerRow}>
+    <h3 className={styles.companyName}>{historyItem.organisation}</h3>
+    <span className={styles.dates}>{`${historyItem.startDate} – ${historyItem.endDate}`}</span>
+  </div>
+ <small className={styles.locationType}>
+  {historyItem.locationType}
+</small>
+  <h5 className={styles.role}>{historyItem.role}</h5>
+  <ul>
+    {historyItem.experiences.map((experience, subId) => {
+      if (
+        historyItem.role === "Sales Business Development" &&
+        subId === 0 &&
+        experience.startsWith("At Torg")
+      ) {
+        return <p key={subId} className={styles.introParagraph}>{experience}</p>;
+      }
+      return <li key={subId}>{experience}</li>;
+    })}
+  </ul>
+</div>
+
                                 </li>
                             )
                         })

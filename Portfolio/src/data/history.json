@@ -1,58 +1,66 @@
 [
   {
-    "role": "Sales Person",
-    "organisation": "ARTE-5YA, PLOVDIV",
-    "startDate": "August,2020",
-    "endDate": "Present",
+    "role": "Strategic Partnerships Specialist",
+    "organisation": "Torg",
+    "startDate": "January 2025",
+    "endDate": "June 2025",
+         "locationType": "Remote | Start-up",
     "experiences": [
-      "Preparation of orders and deliveries",
-      "Increased sales and customer satisfaction through personalized servicing.",
-      "Developed and maintained comprehensive understanding of products, services and competitors to enhance sales presentations",
-      "Negotiated contracts with clients and developed relationships with key personnel"
+      " Building and maintaining long-term business relationships to support market expansion.",
+      " Managing partnerships with key industry players, aligning collaborations with company goals.",
+      " Leading lead generation efforts using tools like Apollo.AI and ContactOut to maintain a strong outreach pipeline.",
+      " Creating and optimizing email campaigns through Lemlist and HubSpot automation, running A/B tests."
+    ],"imageSrc": "history/torg.png"
+  },
+  {
+    "role": "Sales Business Development",
+    "organisation": "Torg",
+    "startDate": "October 2024",
+    "endDate": "January 2025",
+      "locationType": "Remote | Start-up",
+    "experiences": [
+      "At Torg, as an SBD, I am consistently surpassed monthly sales targets, achieving over 80% of the target on a regular basis by:",
+       "Proactively reaching out to key decision-makers, understanding their needs, and positioning our SaaS solution as the ideal fit for their business.",
+       "Conducted discovery calls and tailored product demos to align our B2B solution with client needs, driving engagement and improving conversion rates.",
+       "Effectively manage leads and track communications using HubSpot to ensure timely follow-ups and maximize opportunity conversion."
+    ],"imageSrc": "history/torg.png"
+  },
+  {
+    "role": "Software Sales Representative",
+    "organisation": "IceWeb",
+    "startDate": "June 2024",
+    "endDate": "September 2024",
+         "locationType": "Hybrid",
+    "experiences": [
+       "Surpassed monthly KPIs and consistently exceeded sales targets by over 50% through effective prospecting and outreach.",
+      "Researched and identified high-potential prospects, including C-level and senior marketing executives",
+     "Qualified leads by analyzing their business needs and aligning them with tailored marketing solutions.",
+      "Initiated cold outreach through calls, emails, and social media, successfully securing meetings and facilitating, smooth transitions to Account Executive teams for closing"
+    ],"imageSrc": "history/iceweb.png"
+  },
+  {
+    "role":"General Sales Manager",
+    "organisation": "ARTE-5YA",
+    "startDate": "March 2021",
+    "endDate": "March 2024",
+    "locationType": "On-Site",
+    "experiences": [
+      "Oversaw and streamlined the company's sales processes, ensuring efficiency and alignment with business goals.",
+      "Led comprehensive training programs for sales personnel, enhancing team performance and product knowledge.",
+      "Presented products to clients, effectively communicating the value proposition to drive interest and engagement.",
+      "Negotiated and closed deals, fostering long-term client relationships and maximizing revenue."
     ],"imageSrc": "history/arte-5ya.jpg"
   },
-  {
-    "role": "Real Estate Broker",
-    "organisation": "Adress Real Estate, Plovdiv",
-    "startDate": "November,2019",
-    "endDate": "March,2020",
+    {
+    "role":"Sales Representative",
+    "organisation": "ARTE-5YA",
+    "startDate": "Aug 2020",
+    "endDate": "March 2021",
+    "locationType": "On-Site",
     "experiences": [
-      "Compared properties possessing similar features to determine competitive market prices.",
-      "Negotiated real estate contracts to navigate transactions between buyers and sellers.",
-      "Evaluated properties for potential salability and pricing."
-    ],"imageSrc": "history/address.png"
-  },
-  {
-    "role": "Busser",
-    "organisation": "Tailchasers , Ocean City",
-    "startDate": "June,2019",
-    "endDate": "September, 2019",
-    "experiences": [
-      "Kept close eye on customers to quickly spot leaving guests and clear tables for future patrons.",
-      "Transported dirty utensils, dishes, and trays to kitchen to help team stay on top of cleaning.",
-      "Pitched in extra hours and helped other staff during unexpected times of high volume to improve seating availability and food delivery to tables"
-    ],"imageSrc": "history/tailchasers.png"
-  },
-  {
-    "role": "Maitenenance",
-    "organisation": "DoubleTree by Hilton, Ocean City",
-    "startDate": "May,2019",
-    "endDate": "September, 2019",
-    "experiences": [
-      "Troubleshot equipment breakdowns andperformed preventive maintenance.",
-      "Completed daily, weekly, and monthly checklists on building equipment to maintain records of scheduled maintenance procedures.",
-      "Used problem-solving skills to alleviate issues efficiently with minimal supervision"
-    ],"imageSrc": "history/doubleTree.png"
-  },
-  {
-    "role": "Maitenenance",
-    "organisation": "DoubleTree by Hilton, Ocean City",
-    "startDate": "May, 2018",
-    "endDate": "September, 2018",
-    "experiences": [
-      "Troubleshot equipment breakdowns andperformed preventive maintenance.",
-      "Completed daily, weekly, and monthly checklists on building equipment to maintain records of scheduled maintenance procedures.",
-      "Used problem-solving skills to alleviate issues efficiently with minimal supervision"
-    ],"imageSrc": "history/doubleTree.png"
+      "Led negotiations with potential clients, skillfully handling objections and securing deals that benefited both parties.",
+      "Engaged in outreach activities to establish and nurture strong B2B relationships, expanding the company's network and client base.",
+      "Demonstrated in-depth knowledge of products, effectively presenting and recommending solutions tailored to customer needs."
+    ],"imageSrc": "history/arte-5ya.jpg"
   }
 ]

@@ -51,12 +51,12 @@
 }
 
 .img_hero {
-    width: 44%;
+    width: 30%;
     z-index: 1;
-    animation-name: floating;
+    /* animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out; */
 }
 
 @keyframes floating {
@@ -79,7 +79,7 @@
     height: 50vw;
     min-width: 350px;
     min-height: 350px;
-    top: -128px;
+    /* top: -128px; */
     left: -10vw;
     border-radius: 764px;
     background-color: rgba(101, 11, 153, 0.349);
@@ -93,7 +93,7 @@
     height: 50vw;
     min-width: 350px;
     min-height: 250px;
-    top: 246px;
+    /* top: 246px; */
     right: -25vw;
     border-radius: 764px;
     background-color: rgba(105, 3, 100, 0.329);

@@ -1,135 +1,132 @@
-@import "../../vars.css";
-
 .container_exp {
-    color: var(--color-text);
-    margin-top: 79px;
-    margin-left: 10%;
-    margin-right: 10%;
+  padding: 20px;
+  color:#ffffff;
 }
 
 .title_exp {
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
+  text-align: left; 
+  margin-bottom: 20px;
 }
 
 .content_exp {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 14px;
+  display: flex; 
+  flex-direction: row;
+  align-items: flex-start; 
+  gap: 50px;
+  width: 100%;
 }
 
 .skills {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 11px;
-}
-
-.skillImageContainer {
-    background-color: var(--color-secondary);
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-}
-
-.skillImageContainer img {
-    width: 75px;
-}
-
-.skill p {
-    font-size: 25px;
-    font-family: var(--font-family);
-    font-weight: 500;
+  flex: 1; 
+  max-width: 45%;
 }
 
 .history {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-/* .historyItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 17px;
-    background: #19376d;
-    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 100, 0)100%);
-    border-radius: 10px;
-    padding: 24px;
-} */
-
-.historyItem img {
-    width: 50px;
-    margin-right: 20px;
-}
-
-.historyItemDetails h3 {
-    font-family: var(--font-family);
-    font-size: larger;
-    padding: 10px;
-    margin-left: -10px;
-}
-
-.hisotryItemDetails p {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.hisotryItemDetails ul {
-    margin-top: 6px;
-    list-style-position: inside;
-    font-size: 25px;
-    list-style-type: disc;
-    margin-left: 17px;
-}
-
-.pTagDates {
-    margin-bottom: 6px;
-    list-style-type: disc;
-    list-style-position: inside;
+  flex: 1; 
+  max-width: 55%;
+  list-style: none; 
+  padding: 0;
+  margin: 0;
 }
 
 .previousJobs {
-    font-family: var(--font-family);
-    color: var(--color-text);
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 830px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-        gap: 34px;
-    }
+.skill {
+  display: inline-block;
+  text-align: center;
+  margin: 24px;
+}
 
-    .skills {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-    }
+.skillImageContainer img {
+  width: 55px;
+  height: 50px;
+}
 
-    .history {
-        width: 100%;
-        gap: 9px
-    }
+.historyItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.companyName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.dates {
+  color: #ffffff; 
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-align: right;
+  margin-left: auto; 
+}
+
+.locationType {
+  font-size: 0.8rem;
+  color: #fcfcfc; 
+  margin-bottom: 5px;
+}
+
+.role {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.introParagraph {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+
+.historyItem img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.historyItemDetails h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.historyItemDetails p {
+  margin: 5px 0;
+}
+
+.pTagDates {
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.historyItemDetails ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .content_exp {
+    flex-direction: column;
+  }
+
+  .skills,
+  .history {
+    max-width: 100%;
+  }
 }
