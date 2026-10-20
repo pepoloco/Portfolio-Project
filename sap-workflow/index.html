@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAP Workflow Automation · Penyo Banchev</title>
+<meta name="description" content="Walkthrough of a purchase requisition approval workflow built with SAP Build Process Automation.">
+<link rel="icon" type="image/jpeg" href="../media/portfolio_icon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+:root{--ink:#111418;--ink2:#3B4250;--ink3:#4A5260;--line:#DDE1E7;--soft:#F7F8FB;--blue:#2F5BEA;--dark:#0F1720}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+a{color:var(--blue)}a:hover{color:#1E3FB0}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{background:var(--dark);color:#E8ECF2}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0}
+.back{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border:1px solid #3A4656;border-radius:8px;color:#E8ECF2;text-decoration:none;font-weight:600;font-size:14px}
+.back:hover{color:#fff;background:rgba(255,255,255,.06)}
+.hero{padding:clamp(32px,7vw,56px) 0 clamp(40px,8vw,64px)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:13px;color:#8FB0FF;letter-spacing:.04em}
+h1{margin:12px 0 16px;font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,7vw,52px);line-height:1.08}
+.lede{margin:0;max-width:680px;font-size:clamp(16px,4vw,19px);color:#C9D1DC}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.pill{padding:6px 12px;border-radius:999px;background:#1B2533;color:#C9D1DC;font-size:13px}
+section{padding:clamp(40px,8vw,64px) 0 0}
+.label{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink3)}
+h2{margin:6px 0 16px;font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,6vw,34px);line-height:1.15}
+p{margin:0 0 12px;color:var(--ink2);font-size:16px}
+figure{margin:24px 0 0}
+figure a{display:block;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure img{display:block;width:100%;height:auto}
+figcaption{margin-top:8px;font-size:13px;color:var(--ink3)}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.step{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:18px 20px;border:1px solid var(--line);border-radius:12px}
+.num{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#fff}
+.step h3{margin:0;font-family:'Space Grotesk',sans-serif;font-size:19px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.step p{margin:6px 0 0;font-size:15px}
+.tag{font-family:Inter,sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px}
+.t-trigger{background:#E5EDFF;color:#2F5BEA}.n-trigger{background:#2F5BEA}
+.t-auto{background:#EEE9FF;color:#5B3FD1}.n-auto{background:#6D4FE0}
+.t-approval{background:#FFF3DC;color:#A16207}.n-approval{background:#D99A1E}
+.t-cond{background:#FFE5E7;color:#C0303F}.n-cond{background:#E04A57}
+.t-done{background:#DDF5E7;color:#167A45}.n-done{background:#22A060}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font-size:13px;color:var(--ink3);font-weight:600}
+tr:last-child td{border-bottom:none}
+td:first-child{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:12px}
+.card{padding:18px 20px;border:1px solid var(--line);border-radius:12px}
+.card h3{margin:0 0 4px;font-size:16px;font-weight:600}
+.card p{margin:0;font-size:15px}
+.result{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px}
+.result li{display:flex;gap:10px;align-items:flex-start;padding:16px 18px;border-radius:12px;background:#F1FAF5;font-weight:500}
+.check{flex:0 0 22px;height:22px;border-radius:50%;background:#22A060;color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;margin-top:1px}
+footer{margin-top:72px;background:var(--dark);color:#C9D1DC}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-top:32px;padding-bottom:32px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<nav aria-label="Main"><a class="back" href="../">Go Back to main page</a></nav>
+<div class="hero">
+<div class="eyebrow">Case study · walkthrough</div>
+<h1>SAP Workflow Automation</h1>
+<p class="lede">A purchase requisition approval workflow built with SAP Build Process Automation. Requests are routed to the right approvers by amount, department and cost center, and approved requests become purchase orders without anyone retyping them.</p>
+<div class="pills"><span class="pill">Faster approvals</span><span class="pill">Higher compliance</span><span class="pill">Less manual work</span></div>
+</div>
+</div>
+</header>
+
+<main class="wrap">
+
+<section>
+<div class="label">01 / OVERVIEW</div>
+<h2>From request to posted purchase order</h2>
+<p>Without a workflow, a purchase requisition moves by email: someone works out who needs to sign off, chases them, and keys the purchase order in by hand afterwards. Approvals stall, the wrong people get asked, and there is no single record of who approved what.</p>
+<p>This workflow takes over from the moment a requisition is created. It decides the approval path from the request itself, sends each task to the right inbox, and creates the purchase order once the last approval is in.</p>
+<figure>
+<a href="../media/sap_workflow.png" target="_blank" rel="noopener"><img src="../media/sap_workflow.png" alt="Diagram of the SAP purchase requisition approval workflow: five steps, routing logic by amount, automatic actions and result"></a>
+<figcaption>Full workflow diagram. Click to open at full size.</figcaption>
+</figure>
+</section>
+
+<section>
+<div class="label">02 / STEP BY STEP</div>
+<h2>How a request moves through the workflow</h2>
+<ol class="steps">
+<li class="step"><span class="num n-trigger">1</span><div><h3>PR created <span class="tag t-trigger">Trigger</span></h3><p>An employee creates a purchase requisition in SAP GUI or Fiori. Saving it starts the workflow; there is nothing extra to submit.</p></div></li>
+<li class="step"><span class="num n-auto">2</span><div><h3>Approval routing <span class="tag t-auto">Automated</span></h3><p>The workflow reads the amount, department and cost center and works out who has to approve, using the routing rules below.</p></div></li>
+<li class="step"><span class="num n-approval">3</span><div><h3>Manager approval <span class="tag t-approval">Approval</span></h3><p>The line manager gets the task in SAP Inbox, reviews the request and approves or rejects it. Every request passes through this step.</p></div></li>
+<li class="step"><span class="num n-cond">4</span><div><h3>Additional approval <span class="tag t-cond">Conditional</span></h3><p>If the amount is above the threshold, the request continues to Finance, and for the largest amounts to the Department Head first. Small requests skip this step entirely.</p></div></li>
+<li class="step"><span class="num n-done">5</span><div><h3>PO creation <span class="tag t-done">Automated</span></h3><p>After the final approval, the purchase order is created in SAP automatically and emailed to the vendor.</p></div></li>
+</ol>
+</section>
+
+<section>
+<div class="label">03 / ROUTING LOGIC</div>
+<h2>Who approves what</h2>
+<p>The approval path depends on the amount, so routine purchases go through quickly and large ones get more scrutiny.</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Amount (EUR)</th><th>Approvers</th><th>Workflow path</th></tr></thead>
+<tbody>
+<tr><td>≤ 5,000</td><td>Line Manager</td><td>Simple approval</td></tr>
+<tr><td>5,001 – 50,000</td><td>Line Manager → Finance</td><td>Two-level approval</td></tr>
+<tr><td>&gt; 50,000</td><td>Line Manager → Department Head → Finance</td><td>Three-level approval</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section>
+<div class="label">04 / AUTOMATIC ACTIONS</div>
+<h2>What happens without anyone clicking</h2>
+<div class="grid2">
+<div class="card"><h3>Approval notifications</h3><p>Approvers are notified through SAP Inbox and email as soon as a task reaches them.</p></div>
+<div class="card"><h3>PR status updates</h3><p>The requisition's status is updated at each approval step, so the requester can see where it is.</p></div>
+<div class="card"><h3>Automatic PO creation</h3><p>The purchase order is created after the final approval, with no manual data entry.</p></div>
+<div class="card"><h3>Audit trail</h3><p>Every decision is logged with who approved and when, for compliance and reporting.</p></div>
+</div>
+</section>
+
+<section>
+<div class="label">05 / RESULT</div>
+<h2>Approved and posted</h2>
+<p>The end state is a purchase order in SAP that has already been sent to the vendor, backed by a complete approval history.</p>
+<ul class="result">
+<li><span class="check">✓</span>Faster procurement cycle</li>
+<li><span class="check">✓</span>Full audit trail</li>
+<li><span class="check">✓</span>Reduced manual work</li>
+<li><span class="check">✓</span>Higher compliance</li>
+</ul>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<span>Penyo Banchev · SAP Certified C_LCNC_2601 SAP Build Developer</span>
+<a class="back" href="../">Go Back to main page</a>
+</div>
+</footer>
+
+</body>
+</html>
