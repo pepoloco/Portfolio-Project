@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SAP Workflow Automation · Penyo Banchev</title>
-<meta name="description" content="Walkthrough of a purchase requisition approval workflow built with SAP Build Process Automation.">
+<title>PTO Approval Automation · Penyo Banchev</title>
+<meta name="description" content="Walkthrough of a PTO approval workflow built with SAP Build.">
 <link rel="icon" type="image/jpeg" href="../media/portfolio_icon.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
@@ -19,12 +19,10 @@ nav{display:flex;justify-content:space-between;align-items:center;gap:16px;paddi
 .back{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border:1px solid #3A4656;border-radius:8px;color:#E8ECF2;text-decoration:none;font-weight:600;font-size:14px}
 .back:hover{color:#fff;background:rgba(255,255,255,.06)}
 .hero{padding:clamp(32px,7vw,56px) 0 clamp(40px,8vw,64px)}
-.eyebrow{font-family:'JetBrains Mono',monospace;font-size:13px;color:#8FB0FF;letter-spacing:.04em}
-h1{margin:12px 0 16px;font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,7vw,52px);line-height:1.08}
+h1{margin:0 0 16px;font-family:'Space Grotesk',sans-serif;font-size:clamp(32px,7vw,52px);line-height:1.08}
 .lede{margin:0;max-width:680px;font-size:clamp(16px,4vw,19px);color:#C9D1DC}
 section{padding:clamp(40px,8vw,64px) 0 0}
-.label{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink3)}
-h2{margin:6px 0 16px;font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,6vw,34px);line-height:1.15}
+h2{margin:0 0 16px;font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,6vw,34px);line-height:1.15}
 p{margin:0 0 12px;color:var(--ink2);font-size:16px}
 figure{margin:24px 0 0}
 figure a{display:block;border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -35,27 +33,26 @@ figcaption{margin-top:8px;font-size:13px;color:var(--ink3)}
 .num{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;color:#fff}
 .step h3{margin:0;font-family:'Space Grotesk',sans-serif;font-size:19px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
 .step p{margin:6px 0 0;font-size:15px}
+.branch{margin:0;padding:0 4px;font-size:14px;color:var(--ink3)}
 .tag{font-family:Inter,sans-serif;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px}
 .t-trigger{background:#E5EDFF;color:#2F5BEA}.n-trigger{background:#2F5BEA}
 .t-auto{background:#EEE9FF;color:#5B3FD1}.n-auto{background:#6D4FE0}
 .t-approval{background:#FFF3DC;color:#A16207}.n-approval{background:#D99A1E}
-.t-cond{background:#FFE5E7;color:#C0303F}.n-cond{background:#E04A57}
 .t-done{background:#DDF5E7;color:#167A45}.n-done{background:#22A060}
 .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
-table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+@media (max-width:480px){th,td{padding:10px 12px}table{font-size:14px}}
 th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line)}
 th{background:var(--soft);font-size:13px;color:var(--ink3);font-weight:600}
 tr:last-child td{border-bottom:none}
-td:first-child{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600}
+td:first-child{white-space:nowrap;font-weight:600}
+.who{padding:3px 10px;border-radius:6px;background:#EEF1F5;font-size:14px;white-space:nowrap}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:12px}
 .card{padding:18px 20px;border:1px solid var(--line);border-radius:12px}
 .card h3{margin:0 0 4px;font-size:16px;font-weight:600}
 .card p{margin:0;font-size:15px}
 .outcome{padding:20px 24px;border-left:4px solid #22A060;border-radius:0 12px 12px 0;background:#F1FAF5}
 .outcome p{margin:0;color:var(--ink);font-size:17px;line-height:1.7}
-.chain{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px}
-.who{padding:3px 10px;border-radius:6px;background:#EEF1F5;font-size:14px;white-space:nowrap}
-.then{width:14px;height:14px;flex:0 0 14px;background:no-repeat center/14px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%232F5BEA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3l5 5-5 5'/%3E%3C/svg%3E")}
 footer{margin-top:72px;background:var(--dark);color:#C9D1DC}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-top:32px;padding-bottom:32px}
 </style>
@@ -66,9 +63,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 <div class="wrap">
 <nav aria-label="Main"><a class="back" href="../">Go Back to main page</a></nav>
 <div class="hero">
-<div class="eyebrow">Case study · walkthrough</div>
-<h1>SAP Workflow Automation</h1>
-<p class="lede">A purchase requisition approval workflow built with SAP Build Process Automation. Requests are routed to the right approvers by amount, department and cost center, and approved requests become purchase orders without anyone retyping them.</p>
+<h1>PTO Approval Automation</h1>
+<p class="lede">A leave request workflow built with SAP Build. Medical leave is approved automatically, annual and unpaid leave go to the line manager for review, and the requester is notified of the decision either way.</p>
 </div>
 </div>
 </header>
@@ -76,61 +72,57 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 <main class="wrap">
 
 <section>
-<div class="label">01 / OVERVIEW</div>
-<h2>From request to posted purchase order</h2>
-<p>Without a workflow, a purchase requisition moves by email: someone works out who needs to sign off, chases them, and keys the purchase order in by hand afterwards. Approvals stall, the wrong people get asked, and there is no single record of who approved what.</p>
-<p>This workflow takes over from the moment a requisition is created. It decides the approval path from the request itself, sends each task to the right inbox, and creates the purchase order once the last approval is in.</p>
+<h2>From request to decision</h2>
+<p>Handled by hand, every leave request needs someone to read it, decide who should approve it, and remember to tell the employee the outcome. Simple requests wait in the same queue as the ones that actually need a decision, and there is no consistent record of who approved what.</p>
+<p>This workflow starts when the employee submits a request. It checks the leave type, approves medical leave straight away, sends annual and unpaid leave to the line manager, and closes the loop by notifying the requester.</p>
 <figure>
-<a href="../media/sap_workflow.png" target="_blank" rel="noopener"><img src="../media/sap_workflow.png" alt="Diagram of the SAP purchase requisition approval workflow: five steps, routing logic by amount, automatic actions and result"></a>
+<a href="../media/PTO_SAP_Workflow.png" target="_blank" rel="noopener"><img src="../media/PTO_SAP_Workflow.png" alt="Diagram of the SAP Build PTO approval workflow: request submitted, leave type check, automatic approval for medical leave or manager review for annual and unpaid leave, then requester notified"></a>
 <figcaption>Full workflow diagram. Click to open at full size.</figcaption>
 </figure>
 </section>
 
 <section>
-<div class="label">02 / STEP BY STEP</div>
 <h2>How a request moves through the workflow</h2>
 <ol class="steps">
-<li class="step"><span class="num n-trigger">1</span><div><h3>PR created <span class="tag t-trigger">Trigger</span></h3><p>An employee creates a purchase requisition in SAP GUI or Fiori. Saving it starts the workflow; there is nothing extra to submit.</p></div></li>
-<li class="step"><span class="num n-auto">2</span><div><h3>Approval routing <span class="tag t-auto">Automated</span></h3><p>The workflow reads the amount, department and cost center and works out who has to approve, using the routing rules below.</p></div></li>
-<li class="step"><span class="num n-approval">3</span><div><h3>Manager approval <span class="tag t-approval">Approval</span></h3><p>The line manager gets the task in SAP Inbox, reviews the request and approves or rejects it. Every request passes through this step.</p></div></li>
-<li class="step"><span class="num n-cond">4</span><div><h3>Additional approval <span class="tag t-cond">Conditional</span></h3><p>If the amount is above the threshold, the request continues to Finance, and for the largest amounts to the Department Head first. Small requests skip this step entirely.</p></div></li>
-<li class="step"><span class="num n-done">5</span><div><h3>PO creation <span class="tag t-done">Automated</span></h3><p>After the final approval, the purchase order is created in SAP automatically and emailed to the vendor.</p></div></li>
+<li class="step"><span class="num n-trigger">1</span><div><h3>PTO request created <span class="tag t-trigger">Trigger</span></h3><p>The employee submits a request with the leave type, dates and any comments. Submitting it starts the workflow.</p></div></li>
+<li class="step"><span class="num n-auto">2</span><div><h3>Leave type decision <span class="tag t-auto">Automated</span></h3><p>The workflow checks whether the request is Medical, Annual or Unpaid and sends it down the matching path.</p></div></li>
+<li class="branch">The request then takes one of two paths:</li>
+<li class="step"><span class="num n-done">3</span><div><h3>Medical leave <span class="tag t-done">Auto-approved</span></h3><p>Medical leave is approved automatically, with no one needing to act on it.</p></div></li>
+<li class="step"><span class="num n-approval">4</span><div><h3>Manager review <span class="tag t-approval">Approval</span></h3><p>Annual and unpaid leave go to the line manager, who reviews the request and approves or rejects it.</p></div></li>
+<li class="step"><span class="num n-auto">5</span><div><h3>Notification sent <span class="tag t-auto">Automated</span></h3><p>Whatever the outcome, the requester automatically receives a notification that the request was approved or rejected.</p></div></li>
 </ol>
 </section>
 
 <section>
-<div class="label">03 / ROUTING LOGIC</div>
 <h2>Who approves what</h2>
-<p>The approval path depends on the amount, so routine purchases go through quickly and large ones get more scrutiny.</p>
+<p>The leave type decides the path: requests that need no judgement are handled by the system, and the rest go to the person who can decide.</p>
 <div class="table-wrap">
 <table>
-<thead><tr><th>Amount (EUR)</th><th>Approvers</th><th>Workflow path</th></tr></thead>
+<thead><tr><th>Leave type</th><th>Approver</th><th>Workflow path</th></tr></thead>
 <tbody>
-<tr><td>≤ 5,000</td><td><span class="chain"><span class="who">Line Manager</span></span></td><td>Simple approval</td></tr>
-<tr><td>5,001 – 50,000</td><td><span class="chain"><span class="who">Line Manager</span><span class="then" aria-label="then"></span><span class="who">Finance</span></span></td><td>Two-level approval</td></tr>
-<tr><td>&gt; 50,000</td><td><span class="chain"><span class="who">Line Manager</span><span class="then" aria-label="then"></span><span class="who">Department Head</span><span class="then" aria-label="then"></span><span class="who">Finance</span></span></td><td>Three-level approval</td></tr>
+<tr><td>Medical</td><td><span class="who">System</span></td><td>Automatic approval</td></tr>
+<tr><td>Annual</td><td><span class="who">Line Manager</span></td><td>Manager review</td></tr>
+<tr><td>Unpaid</td><td><span class="who">Line Manager</span></td><td>Manager review</td></tr>
 </tbody>
 </table>
 </div>
 </section>
 
 <section>
-<div class="label">04 / AUTOMATIC ACTIONS</div>
 <h2>What happens without anyone clicking</h2>
 <div class="grid2">
-<div class="card"><h3>Approval notifications</h3><p>Approvers are notified through SAP Inbox and email as soon as a task reaches them.</p></div>
-<div class="card"><h3>PR status updates</h3><p>The requisition's status is updated at each approval step, so the requester can see where it is.</p></div>
-<div class="card"><h3>Automatic PO creation</h3><p>The purchase order is created after the final approval, with no manual data entry.</p></div>
-<div class="card"><h3>Audit trail</h3><p>Every decision is logged with who approved and when, for compliance and reporting.</p></div>
+<div class="card"><h3>Requester notification</h3><p>The requester is emailed the decision as soon as it is made.</p></div>
+<div class="card"><h3>PTO status update</h3><p>The request's status is set to Approved or Rejected automatically.</p></div>
+<div class="card"><h3>Medical leave auto-approval</h3><p>Medical leave requests are approved without waiting for a manager.</p></div>
+<div class="card"><h3>Audit log</h3><p>Every decision is recorded with its approval details for compliance.</p></div>
 </div>
 </section>
 
 <section>
-<div class="label">05 / RESULT</div>
-<h2>Approved and posted</h2>
-<p>The end state is a purchase order in SAP that has already been sent to the vendor, backed by a complete approval history.</p>
+<h2>Approved or rejected</h2>
+<p>Every request ends with a clear decision, and the requester hears about it without having to ask.</p>
 <div class="outcome">
-<p>With this workflow we achieve a faster procurement cycle, because requests go straight to the right approver instead of waiting in someone's email. Requesters and Finance do less manual work, since nobody has to work out the approval path or key in the purchase order. And compliance improves: every request follows the same rules for its amount, and every decision is recorded in a full audit trail.</p>
+<p>With this workflow we achieve faster responses, because medical leave is approved instantly and the rest goes straight to the right manager. There is less manual follow-up, since no one has to route requests or chase decisions. Everyone gets a clear approval path for each leave type, and requesters are updated automatically the moment a decision is made.</p>
 </div>
 </section>
 
