@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PTO Approval Automation · Penyo Banchev</title>
 <meta name="description" content="Walkthrough of a PTO approval workflow built with SAP Build.">
-<link rel="icon" type="image/jpeg" href="../media/portfolio_icon.jpg">
+<link rel="icon" type="image/png" href="../media/favicon_website.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
 <style>
@@ -51,6 +51,8 @@ td:first-child{white-space:nowrap;font-weight:600}
 .card{padding:18px 20px;border:1px solid var(--line);border-radius:12px}
 .card h3{margin:0 0 4px;font-size:16px;font-weight:600}
 .card p{margin:0;font-size:15px}
+.points{margin:8px 0 0;padding-left:18px;color:var(--ink2);font-size:15px}
+.points li{margin:4px 0}
 .outcome{padding:20px 24px;border-left:4px solid #22A060;border-radius:0 12px 12px 0;background:#F1FAF5}
 .outcome p{margin:0;color:var(--ink);font-size:17px;line-height:1.7}
 footer{margin-top:72px;background:var(--dark);color:#C9D1DC}
@@ -72,9 +74,21 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 <main class="wrap">
 
 <section>
-<h2>From request to decision</h2>
-<p>Handled by hand, every leave request needs someone to read it, decide who should approve it, and remember to tell the employee the outcome. Simple requests wait in the same queue as the ones that actually need a decision, and there is no consistent record of who approved what.</p>
-<p>This workflow starts when the employee submits a request. It checks the leave type, approves medical leave straight away, sends annual and unpaid leave to the line manager, and closes the loop by notifying the requester.</p>
+<h2>Overview</h2>
+<div class="grid2">
+<div class="card"><h3>What it does</h3><ul class="points">
+<li>Routes each PTO request by leave type</li>
+<li>Approves medical leave automatically</li>
+<li>Sends annual and unpaid leave to the line manager</li>
+<li>Notifies the requester and logs every decision</li>
+</ul></div>
+<div class="card"><h3>What it solves</h3><ul class="points">
+<li>No manual routing of leave requests</li>
+<li>No waiting on requests that need no decision</li>
+<li>No chasing managers or requesters for outcomes</li>
+<li>No gaps in the record of who approved what</li>
+</ul></div>
+</div>
 <figure>
 <a href="../media/PTO_SAP_Workflow.png" target="_blank" rel="noopener"><img src="../media/PTO_SAP_Workflow.png" alt="Diagram of the SAP Build PTO approval workflow: request submitted, leave type check, automatic approval for medical leave or manager review for annual and unpaid leave, then requester notified"></a>
 <figcaption>Full workflow diagram. Click to open at full size.</figcaption>
